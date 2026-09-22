@@ -10,7 +10,8 @@ description: >-
   Claude", or when they paste API docs / an OpenAPI spec / a curl example and ask for tools. Also for
   extending, debugging or re-registering an existing local MCP server (server does not load, tools
   missing, token 401). Do NOT use for n8n workflows (n8n-workflow-builder) or a remote multi-tenant
-  OAuth server (Cloudflare Workers, see agents-sdk).---
+  OAuth server (Cloudflare Workers, see agents-sdk).
+---
 
 # API → MCP
 
