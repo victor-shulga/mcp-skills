@@ -1,7 +1,16 @@
 ---
 name: api-to-mcp
-description: Turn any REST/HTTP API into a working local MCP server that Claude Code can call — recon of the API surface, job-shaped tool design, a single-file Python server (uv + PEP 723 inline deps), a --check smoke test, safe secret handling, user-scope registration, and a README. Use this skill WHENEVER the user wants to wrap an API, service, or product as MCP — including phrasings like "зроби MCP з цього API", "оберни API в MCP", "хочу свій MCP-сервер для X", "build an MCP server for <service>", "wrap this OpenAPI spec as MCP", "make a connector for X", "додай тули для X у Claude", "у X немає MCP, зроби", "напиши mcp server", "expose our internal API to Claude", or when they paste API docs / an OpenAPI spec / a curl example and ask for tools. Also use when extending, debugging, or re-registering an existing local MCP server (server does not load, tools missing, token 401, "чому не бачить сервер"). Do NOT use for building n8n workflows (use n8n-workflow-builder) or for a remote multi-tenant OAuth server (that is Cloudflare Workers territory — see agents-sdk).
----
+description: >-
+  Turn any REST/HTTP API into a working local MCP server that Claude Code can call: recon of the API
+  surface, job-shaped tool design, a single-file Python server (uv + PEP 723 inline deps), a --check
+  smoke test, safe secret handling, user-scope registration and a README. Use WHENEVER the user wants
+  to wrap an API, service or product as MCP: "зроби MCP з цього API", "оберни API в MCP", "хочу свій
+  MCP-сервер для X", "build an MCP server for <service>", "wrap this OpenAPI spec as MCP", "make a
+  connector for X", "додай тули для X у Claude", "напиши mcp server", "expose our internal API to
+  Claude", or when they paste API docs / an OpenAPI spec / a curl example and ask for tools. Also for
+  extending, debugging or re-registering an existing local MCP server (server does not load, tools
+  missing, token 401). Do NOT use for n8n workflows (n8n-workflow-builder) or a remote multi-tenant
+  OAuth server (Cloudflare Workers, see agents-sdk).---
 
 # API → MCP
 
