@@ -20,7 +20,7 @@ Getting this wrong produces a 401/403 that reads exactly like a bad key. Confirm
 ## 2. Probe the surface
 
 ```bash
-python3 ~/.claude/skills/api-to-mcp/scripts/probe.py \
+python3 "<skill dir>/scripts/probe.py" \
   --base https://my.example.com/api --header "Api-Key: $KEY" \
   --paths /me /clients /memberships /leads
 ```
@@ -40,7 +40,7 @@ Two more rules that come from the same server:
 Parameter names are the least reliable part of any API, and a wrong assumption here silently corrupts every aggregate built on it.
 
 ```bash
-python3 ~/.claude/skills/api-to-mcp/scripts/probe.py \
+python3 "<skill dir>/scripts/probe.py" \
   --base https://my.example.com/api --header "Api-Key: $KEY" \
   --paginate /classes/schedule --param page_start --limit-param page_limit --limit 100 \
   --extra start=2026-08-01 --extra finish=2026-08-31

@@ -80,8 +80,10 @@ Before coding, show the user the planned tool list — name, one-line purpose, r
 
 ## Step 3 — Scaffold
 
+`<skill dir>` below is the folder this SKILL.md was loaded from (it differs between a user-level and a project-level install). Resolve it once, show it to the user, and run only the scripts inside it.
+
 ```bash
-python3 ~/.claude/skills/api-to-mcp/scripts/scaffold.py \
+python3 "<skill dir>/scripts/scaffold.py" \
   --slug acme-mcp --server-name acme --title "Acme" \
   --base-url https://api.acme.com/v1 --env-prefix ACME \
   --dir "$HOME/projects"
